@@ -8,13 +8,13 @@ CPPDEFINES = []
 if GetDepend('PKG_USING_WLAN_CYW43439'):
     src += [
         cwd + '/drv_wifi_cyw43439.c',
-        cwd + '/pico-source/src/async_context_rtthread.c',
-        cwd + '/pico-source/src/cyw43_arch.c',
-        cwd + '/pico-source/src/cyw43_arch_rtthread.c',
-        cwd + '/pico-source/src/lwip_rtthread.c',
+        cwd + '/source/src/async_context_rtthread.c',
+        cwd + '/source/src/cyw43_arch.c',
+        cwd + '/source/src/cyw43_arch_rtthread.c',
+        cwd + '/source/src/lwip_rtthread.c',
     ]
     path += [
-        cwd + '/pico-source/inc',
+        cwd + '/source/inc',
     ]
 
     CPPDEFINES = [
